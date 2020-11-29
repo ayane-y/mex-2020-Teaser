@@ -7,7 +7,7 @@
 }
 
 .mex-Content {
-  /* デスクトップ版 背景ビジュアル 1980 × 1280 px */
+  /* 4. デスクトップ版 背景ビジュアル 1980 × 1280 px */
   background-image: url(../images/background-0.jpg);
   background-size: cover;
   background-position: center;
@@ -31,12 +31,12 @@
 }
 
 .mex-Content::before {
-  /* デスクトップ版 上部 文字の帯 幅なりゆき × 150 px */
+  /* 5. デスクトップ版 上部 文字の帯 幅なりゆき × 150 px */
   background-image: url(../images/text-band-top-0.png);
 }
 
 .mex-Content::after {
-  /* デスクトップ版 下部 文字の帯 幅なりゆき × 150 px */
+  /* 6. デスクトップ版 下部 文字の帯 幅なりゆき × 150 px */
   background-image: url(../images/text-band-bottom-0.png);
   bottom: 0;
 }
@@ -73,7 +73,7 @@
 /* タブレット, スマホのデザイン */
 @media (max-width: 768px) {
   .mex-Content {
-    /* スマホ版 背景ビジュアル 700 × 1200 px */
+    /* 7. スマホ版 背景ビジュアル 700 × 1200 px */
     background-image: url(../images/sp-background-0.jpg);
   }
 
@@ -83,12 +83,12 @@
   }
 
   .mex-Content::before {
-    /* スマホ版 上部 文字の帯 幅なりゆき × 90 px */
+    /* 8. スマホ版 上部 文字の帯 幅なりゆき × 90 px */
     background-image: url(../images/sp-text-band-top-0.png);
   }
 
   .mex-Content::after {
-    /* スマホ版 下部 文字の帯 幅なりゆき × 90 px */
+    /* 9. スマホ版 下部 文字の帯 幅なりゆき × 90 px */
     background-image: url(../images/sp-text-band-bottom-0.png);
   }
 
