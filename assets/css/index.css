@@ -1,9 +1,103 @@
-body {
-  background-color: #fff;
+.mex-Root {
+  height: 100%;
 }
 
+.mex-Body {
+  height: 100%;
+}
+
+.mex-Content {
+  /* デスクトップ版 背景ビジュアル 1980 × 1280 px */
+  background-image: url(../images/background-0.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  min-height: 900px;
+  position: relative;
+}
+
+.mex-Content::before,
+.mex-Content::after {
+  background-repeat: repeat-x;
+  background-position: center;
+  background-size: auto 100%;
+  content: '';
+  display: block;
+  width: 100%;
+  padding: calc(150 / 1980 * 100%) 0 0;
+  position: absolute;
+  left: 0;
+  z-index: 1;
+}
+
+.mex-Content::before {
+  /* デスクトップ版 上部 文字の帯 幅なりゆき × 150 px */
+  background-image: url(../images/text-band-top-0.png);
+}
+
+.mex-Content::after {
+  /* デスクトップ版 下部 文字の帯 幅なりゆき × 150 px */
+  background-image: url(../images/text-band-bottom-0.png);
+  bottom: 0;
+}
+
+.mex-Img {
+  display: block;
+  width: 100%;
+  max-width: 1280px;
+  padding: 200px 40px;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+}
+
+.mex-Img-sp {
+  display: none;
+}
+
+.sw-SR-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+/* タブレット, スマホのデザイン */
 @media (max-width: 768px) {
-  body {
-    background-color: #ccc;
+  .mex-Content {
+    /* スマホ版 背景ビジュアル 700 × 1200 px */
+    background-image: url(../images/sp-background-0.jpg);
+  }
+
+  .mex-Content::before,
+  .mex-Content::after {
+    padding: calc(90 / 600 * 100%) 0 0;
+  }
+
+  .mex-Content::before {
+    /* スマホ版 上部 文字の帯 幅なりゆき × 90 px */
+    background-image: url(../images/sp-text-band-top-0.png);
+  }
+
+  .mex-Content::after {
+    /* スマホ版 下部 文字の帯 幅なりゆき × 90 px */
+    background-image: url(../images/sp-text-band-bottom-0.png);
+  }
+
+  .mex-Img-pc {
+    display: none;
+  }
+
+  .mex-Img-sp {
+    display: block;
+    max-width: 600px;
   }
 }
