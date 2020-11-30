@@ -93,6 +93,10 @@
     background-image: url(../images/sp-text-band-bottom-0.png);
   }
 
+  .mex-Img {
+    padding: 110px 0;
+  }
+
   .mex-Img-pc {
     display: none;
   }
